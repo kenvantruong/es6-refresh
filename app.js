@@ -3,9 +3,22 @@
 
 
 // forEach
-var number = ['jordan', 'kobe', 'dwayne', 'lebron']
+var images = [
+  { height: 10, width: 30 },
+  { height: 20, width: 90 },
+  { height: 54, width: 32 }
+];
+var areas = [];
 
-number.forEach(function(e, i){
-  console.log(number);
+images.forEach(function(image){
+    let area = image.height * image.width;
+
+    areas.push(area);
 })
+
+console.log(areas);
+
+
+
+
 
